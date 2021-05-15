@@ -2,28 +2,34 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/Pokemon.module.scss";
 
-function Pokemon() {
+function Pokemon({ item }) {
   return (
     <div className={styles.card}>
       <div className={styles.left}>
         <div className={styles["image-wrapper"]}>
           <img
             className={styles["pokemon-img"]}
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+            src={item.sprites["front_default"]}
             alt="Picture of the pokemon"
           />
         </div>
       </div>
       <div className={styles.right}>
-        <h3>bulbasaur</h3>
+        <h3>{item.name}</h3>
         <div className={styles.types}>
-          <p>Types:</p>
-          <p>Grass</p>
-          <p>Poision</p>
+          <p className={styles.title}>Types:</p>
+          <div className={styles["all-types"]}>
+            <p>{item.types[0].type.name}</p>
+            <p>
+              {item.types[1]
+                ? item.types[1].type.name
+                : item.types[0].type.name}
+            </p>
+          </div>
         </div>
         <div className={styles.body}>
-          <p>Weight: 6.9 kgs</p>
-          <p>Height: 0.7m</p>
+          <p>Weight: {(item.weight * 10) / 100}kgs</p>
+          <p>Height:{(item.height * 10) / 100}m</p>
         </div>
         <p></p>
       </div>

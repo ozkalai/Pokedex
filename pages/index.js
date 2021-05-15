@@ -9,7 +9,7 @@ export default function Home({ data, pokemon }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Pokedex</h2>
-      <PokemonList />
+      <PokemonList pokemon={pokemon} />
     </div>
   );
 }

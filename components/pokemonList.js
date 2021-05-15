@@ -1,10 +1,13 @@
 import React from "react";
 import Pokemon from "./pokemon";
+import styles from "../styles/Home.module.css";
 
-function PokemonList() {
+function PokemonList({ pokemon }) {
   return (
-    <div>
-      <Pokemon />
+    <div className={styles.container}>
+      {pokemon.map((item) => (
+        <Pokemon item={item} />
+      ))}
     </div>
   );
 }
