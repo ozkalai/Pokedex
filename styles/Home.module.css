@@ -3,11 +3,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4rem;
-  background-color: red;
 }
 
 .title {
   font-size: xx-large;
-  color: blue;
+  color: #023047;
+}
+
+.load {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  color: #fff;
+  background: #023047;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }

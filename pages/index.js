@@ -6,10 +6,18 @@ import styles from "../styles/Home.module.css";
 
 export default function Home({ data, pokemon }) {
   console.log("pokemon", pokemon);
+
+  const clickHandler = () => {
+    console.log("hey");
+  };
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Pokedex</h2>
       <PokemonList pokemon={pokemon} />
+      <button onClick={clickHandler} className={styles.load}>
+        Load More
+      </button>
     </div>
   );
 }
