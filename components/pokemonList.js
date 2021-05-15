@@ -2,10 +2,10 @@ import React from "react";
 import Pokemon from "./pokemon";
 import styles from "../styles/Home.module.css";
 
-function PokemonList({ pokemon }) {
+function PokemonList({ data }) {
   return (
     <div className={styles.container}>
-      {pokemon.map((item) => (
+      {data.map((item) => (
         <Pokemon item={item} />
       ))}
     </div>
