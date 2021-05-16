@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .detail-card {
+    display: flex;
+    flex-direction: column;
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .name {
+      font-family: "Poppins", sans-serif;
+      font-size: xx-large;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      color: #023047;
+    }
+    .stats {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        width: 200px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #023047;
+        padding-bottom: 10px;
+      }
+    }
+    .hp {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      h4 {
+        margin: 0;
+        width: 100px;
+      }
+      p {
+        font-size: large;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+    .attack {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      h4 {
+        margin: 0;
+        width: 100px;
+      }
+      p {
+        margin: 0;
+
+        font-size: large;
+        font-weight: 600;
+      }
+    }
+    .defence {
+      justify-content: space-evenly;
+      align-items: center;
+      display: flex;
+      h4 {
+        margin: 0;
+        width: 100px;
+      }
+      p {
+        margin: 0;
+
+        font-size: large;
+        font-weight: 600;
+      }
+    }
+    .abilities {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .title {
+        width: 200px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #023047;
+      }
+      p {
+        font-size: large;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
